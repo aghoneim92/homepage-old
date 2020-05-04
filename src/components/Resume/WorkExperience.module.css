@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header:not(:first-of-type) {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid black;
+}
+
+.companyName {
+  margin-top: 0;
+}
+
+.description {
+  font-weight: normal;
+  font-style: italic;
+}

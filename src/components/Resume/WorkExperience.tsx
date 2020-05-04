@@ -50,7 +50,7 @@ const jobs: JobDetails[] = [
     responsibilities: [
       "Converted the website from UTF-16 to UTF-8",
       "Added git to the website",
-      "Worked on internal tooling to manage coures and invoices",
+      "Worked on internal tooling to manage courses and invoices",
       "Converted the website from PHP 5 to PHP 7",
     ],
     technologies: ["PHP"],
@@ -63,7 +63,7 @@ const jobs: JobDetails[] = [
     description:
       "Full-stack web developer at a networking management system provider",
     responsibilities: [
-      "Converted the tool to React.js",
+      "Converted the webapp to React",
       "Built a charting library using d3.js",
       "Built a chart annotation tool in React",
     ],

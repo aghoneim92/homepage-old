@@ -22,6 +22,14 @@ export default function BasicInfo() {
           <td>BSc Computer Engineering, Alexandria University</td>
         </tr>
         <tr>
+          <td>Homepage</td>
+          <td>
+            <a href="https://homepage-8ffa0.web.app/">
+              https://homepage-8ffa0.web.app/
+            </a>
+          </td>
+        </tr>
+        <tr>
           <td>Phone Number</td>
           <td>+20 12 777 666 43</td>
         </tr>

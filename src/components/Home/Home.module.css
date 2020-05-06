@@ -1,3 +1,9 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   background-color: var(--ghoneim-red);
   height: 100px;
@@ -11,7 +17,7 @@
 }
 
 .profilePicture {
-  height: 320px;
+  height: 300px;
 }
 
 .name {
@@ -39,12 +45,12 @@
 }
 
 .footer {
-  margin-top: 2em;
   padding: 1em;
   background-color: var(--ghoneim-red);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 .githubLink {

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <>
+    <div className={classes.container}>
       <header className={classes.header}></header>
       <main className={classes.main}>
         <img
@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className={classes.name}>Ahmed Ghoneim</h1>
         <h3 className={classes.profession}>Software Engineer</h3>
         <Link className={classes.buttonLink} to="/resume">
-          View Resume
+          Resume
         </Link>
         <a
           className={classes.buttonLink}
@@ -39,6 +39,6 @@ export default function Home() {
           <span className={classes.githubHandle}>@aghoneim92</span>
         </a>
       </footer>
-    </>
+    </div>
   );
 }

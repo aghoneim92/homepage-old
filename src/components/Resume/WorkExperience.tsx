@@ -21,8 +21,8 @@ const jobs: JobDetails[] = [
       "Fullstack software engineer at Careem BUS. We provide a mass-transit system for the Middle-East region.",
     responsibilities: [
       "Worked on internal tooling for network management using React and Node.js",
-      "Worked on the Bus backend using node.js",
-      "Worked on deploying and monitoring our services using AWS and Docker",
+      "Worked on the Bus backend using Node.js",
+      "Deployed and monitored our services using AWS, Docker, and NewRelic",
     ],
     technologies: ["Node.js", "Postgres", "React", "Docker", "AWS"],
   },
@@ -36,7 +36,7 @@ const jobs: JobDetails[] = [
     responsibilities: [
       "Worked on the friday.de website sales funnel using React",
       "Worked on the user portal for managing your insurance using React",
-      "Built a public API using Spring Boot",
+      "Built a public pricing API using Spring Boot",
     ],
     technologies: ["React", "Spring Boot", "AWS", "Docker"],
   },
@@ -48,10 +48,10 @@ const jobs: JobDetails[] = [
     description:
       "Freelance full-stack web developer at an e-learning website providing courses for the german chamber of commerce",
     responsibilities: [
-      "Converted the website from UTF-16 to UTF-8",
-      "Added git to the website",
       "Worked on internal tooling to manage courses and invoices",
+      "Converted the website from UTF-16 to UTF-8",
       "Converted the website from PHP 5 to PHP 7",
+      "Added git to the website",
     ],
     technologies: ["PHP"],
   },
@@ -63,11 +63,11 @@ const jobs: JobDetails[] = [
     description:
       "Full-stack web developer at a networking management system provider",
     responsibilities: [
-      "Converted the webapp to React",
+      "Ported the webapp from jsp and jquery to React",
       "Built a charting library using d3.js",
       "Built a chart annotation tool in React",
     ],
-    technologies: ["React", "Spring MVC"],
+    technologies: ["React", "Spring MVC", "D3.js"],
   },
 ];
 
@@ -102,7 +102,7 @@ function Job({
         ))}
       </ul>
       <span>Technology stack: </span>
-      {technologies.join(", ")}
+      <b>{technologies.join(", ")}</b>
     </>
   );
 }

@@ -14,7 +14,7 @@ interface JobDetails {
 const jobs: JobDetails[] = [
   {
     from: "February 12th 2019",
-    to: "present",
+    to: "May 7th 2020",
     company: "Careem",
     location: "Cairo, Egypt",
     description:

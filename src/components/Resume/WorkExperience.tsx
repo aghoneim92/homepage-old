@@ -24,7 +24,14 @@ const jobs: JobDetails[] = [
       "Worked on the Bus backend using Node.js",
       "Deployed and monitored our services using AWS, Docker, and NewRelic",
     ],
-    technologies: ["React", "Node.js", "Postgres", "Docker", "AWS"],
+    technologies: [
+      "React",
+      "Typescript",
+      "Node.js",
+      "Postgres",
+      "Docker",
+      "AWS",
+    ],
   },
   {
     from: "December 4th 2017",
@@ -38,7 +45,7 @@ const jobs: JobDetails[] = [
       "Worked on the user portal for managing your insurance using React",
       "Built a public pricing API using Spring Boot",
     ],
-    technologies: ["React", "Spring Boot", "AWS", "Docker"],
+    technologies: ["React", "Typescript", "Spring Boot", "AWS", "Docker"],
   },
   {
     from: "February 1st 2017",

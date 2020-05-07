@@ -24,7 +24,7 @@ const jobs: JobDetails[] = [
       "Worked on the Bus backend using Node.js",
       "Deployed and monitored our services using AWS, Docker, and NewRelic",
     ],
-    technologies: ["Node.js", "Postgres", "React", "Docker", "AWS"],
+    technologies: ["React", "Node.js", "Postgres", "Docker", "AWS"],
   },
   {
     from: "December 4th 2017",
@@ -53,7 +53,7 @@ const jobs: JobDetails[] = [
       "Converted the website from PHP 5 to PHP 7",
       "Added git to the website",
     ],
-    technologies: ["PHP"],
+    technologies: ["PHP", "mySQL"],
   },
   {
     from: "August 2014",

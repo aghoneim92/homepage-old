@@ -64,7 +64,9 @@ const jobs: JobDetails[] = [
       "Full-stack web developer at a networking management system provider",
     responsibilities: [
       "Ported the webapp from jsp and jquery to React",
+      "Worked on the backend REST api using Spring MVC",
       "Built a charting library using d3.js",
+      "Exported isomorphic charts to PDF",
       "Built a chart annotation tool in React",
     ],
     technologies: ["React", "Spring MVC", "D3.js"],

@@ -19,7 +19,7 @@ export default function BasicInfo() {
         </tr>
         <tr>
           <td>Degree</td>
-          <td>BSc Computer Engineering, Alexandria University</td>
+          <td>BSc Computer Engineering, Alexandria University - 2014</td>
         </tr>
         <tr>
           <td>Homepage</td>

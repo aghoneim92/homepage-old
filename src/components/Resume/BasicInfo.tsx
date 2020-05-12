@@ -24,9 +24,7 @@ export default function BasicInfo() {
         <tr>
           <td>Homepage</td>
           <td>
-            <a href="https://homepage-8ffa0.web.app/">
-              https://homepage-8ffa0.web.app/
-            </a>
+            <a href="https://homepage-8ffa0.web.app/">https://ghoneim.me</a>
           </td>
         </tr>
         <tr>

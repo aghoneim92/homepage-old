@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.header {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillGroup:not(:first-of-type) {
+  margin-left: 1em;
+}

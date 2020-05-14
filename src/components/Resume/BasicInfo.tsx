@@ -6,10 +6,6 @@ export default function BasicInfo() {
     <table className={classes.infoTable}>
       <tbody>
         <tr>
-          <td>Name</td>
-          <td>Ahmed Ghoneim</td>
-        </tr>
-        <tr>
           <td>Born</td>
           <td>30 September, 1992 in Alexandria, Egypt</td>
         </tr>
@@ -19,12 +15,22 @@ export default function BasicInfo() {
         </tr>
         <tr>
           <td>Degree</td>
-          <td>BSc Computer Engineering, Alexandria University - 2014</td>
+          <td>
+            BSc Computer Engineering, Alexandria University - 2014 - GPA 3.59
+          </td>
         </tr>
         <tr>
           <td>Homepage</td>
           <td>
             <a href="https://homepage-8ffa0.web.app/">https://ghoneim.me</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Github</td>
+          <td>
+            <a href="https://github.com/aghoneim92">
+              https://github.com/aghoneim92
+            </a>
           </td>
         </tr>
         <tr>

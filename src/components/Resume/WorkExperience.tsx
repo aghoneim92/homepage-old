@@ -1,13 +1,15 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import classes from "./WorkExperience.module.css";
+import ListItem from "./ListItem";
 
 interface JobDetails {
   from: string;
   to: string;
   company: string;
   location: string;
-  description: string;
-  responsibilities: string[];
+  position: string;
+  companyDescription: string;
+  responsibilities: ReactNode[];
   technologies: string[];
 }
 
@@ -17,12 +19,25 @@ const jobs: JobDetails[] = [
     to: "May 7th 2020",
     company: "Careem",
     location: "Cairo, Egypt",
-    description:
-      "Fullstack software engineer at Careem BUS. We provide a mass-transit system for the Middle-East region.",
+    companyDescription: "Careem BUS, a mass-transit app",
+    position: "Fullstack software engineer",
     responsibilities: [
-      "Worked on internal tooling for network management using React and Node.js",
-      "Worked on the Bus backend using Node.js",
-      "Deployed and monitored our services using AWS, Docker, and NewRelic",
+      <span>
+        Created, along with a team, the internal portal for buses, bus lines,
+        schedule, driver, growth, and user management using <b>React</b> and{" "}
+        <b>Node.js</b>
+      </span>,
+      <span>
+        Worked on various backend tasks using <b>Node.js</b>
+      </span>,
+      <span>
+        Was responsible for mentoring other developers in Javascript,
+        Typescript, Node.js, and React
+      </span>,
+      <span>
+        Deployed and monitored our services using <b>AWS</b>, <b>Docker</b>, and{" "}
+        <b>NewRelic</b>
+      </span>,
     ],
     technologies: [
       "React",
@@ -36,10 +51,10 @@ const jobs: JobDetails[] = [
   {
     from: "December 4th 2017",
     to: "October 31st 2018",
-    company: "Friday.de",
+    company: "friday.de",
     location: "Berlin, Germany",
-    description:
-      "Frontend developer at friday.de, an online car insurance provider.",
+    companyDescription: "An online car insurance provider",
+    position: "Frontend developer",
     responsibilities: [
       "Worked on the friday.de website sales funnel using React",
       "Worked on the user portal for managing your insurance using React",
@@ -52,10 +67,11 @@ const jobs: JobDetails[] = [
     to: "October 31st 2017",
     company: "pruefungspaten.de",
     location: "Berlin, Germany",
-    description:
-      "Freelance full-stack web developer at an e-learning website providing courses for the german chamber of commerce",
+    companyDescription:
+      "An e-learning website providing courses for the german chamber of commerce",
+    position: "Freelance full-stack web developer",
     responsibilities: [
-      "Worked on internal tooling to manage courses and invoices",
+      "Worked on an internal portal to manage courses and invoices",
       "Converted the website from UTF-16 to UTF-8",
       "Converted the website from PHP 5 to PHP 7",
       "Added git to the website",
@@ -67,10 +83,10 @@ const jobs: JobDetails[] = [
     to: "August 2016",
     company: "Eventum IT Solutions",
     location: "Alexandria, Egypt",
-    description:
-      "Full-stack web developer at a networking management system provider",
+    companyDescription: "A networking management system provider",
+    position: "Full-stack web developer",
     responsibilities: [
-      "Ported the webapp from jsp and jquery to React",
+      "Ported the network management system from jsp and jquery to React",
       "Worked on the backend REST api using Spring MVC",
       "Built a charting library using d3.js",
       "Exported isomorphic charts to PDF",
@@ -85,10 +101,11 @@ function Job({
     from,
     to,
     company,
-    description,
+    companyDescription,
     responsibilities,
     technologies,
     location,
+    position,
   },
 }: {
   details: JobDetails;
@@ -96,7 +113,11 @@ function Job({
   return (
     <>
       <div className={classes.header}>
-        <h3 className={classes.companyName}>{company}</h3>
+        <div>
+          <h3 className={classes.companyName}>{company}</h3>
+          <h4 className={classes.description}>{companyDescription}</h4>
+          <h4 className={classes.position}>{position}</h4>
+        </div>
         <div>
           <div>{location}</div>
           <div>
@@ -104,10 +125,9 @@ function Job({
           </div>
         </div>
       </div>
-      <h4 className={classes.description}>{description}</h4>
       <ul>
         {responsibilities.map((responsibility, index) => (
-          <li key={index}>{responsibility}</li>
+          <ListItem key={index}>{responsibility}</ListItem>
         ))}
       </ul>
       <span>Technology stack: </span>
@@ -118,10 +138,10 @@ function Job({
 
 export default function WorkExperience() {
   return (
-    <>
+    <div>
       {jobs.map((details, index) => (
         <Job key={index} details={details} />
       ))}
-    </>
+    </div>
   );
 }

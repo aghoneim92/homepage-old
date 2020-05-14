@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header:not(:first-of-type) {
@@ -12,9 +11,16 @@
 
 .companyName {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .description {
   font-weight: normal;
   font-style: italic;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.position {
+  margin-bottom: 0.2em;
 }

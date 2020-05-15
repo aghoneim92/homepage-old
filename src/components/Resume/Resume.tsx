@@ -5,6 +5,7 @@ import BasicInfo from "./BasicInfo";
 import WorkExperience from "./WorkExperience";
 import AreasOfExpertise from "./AreasOfExpertise";
 import Skills from "./Skills";
+import Languages from "./Languages";
 
 export default function Resume() {
   return (
@@ -18,6 +19,8 @@ export default function Resume() {
       <Skills />
       <SectionHeader>Work Experience</SectionHeader>
       <WorkExperience />
+      <SectionHeader>Languages</SectionHeader>
+      <Languages />
     </div>
   );
 }

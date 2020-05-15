@@ -18,12 +18,14 @@ const languages = [
 export default function Languages() {
   return (
     <table>
-      {languages.map(({ language, proficiency }, index) => (
-        <tr key={index}>
-          <td>{language}:</td>
-          <td>{proficiency}</td>
-        </tr>
-      ))}
+      <tbody>
+        {languages.map(({ language, proficiency }, index) => (
+          <tr key={index}>
+            <td>{language}:</td>
+            <td>{proficiency}</td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   );
 }

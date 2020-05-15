@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <div className={classes.container}>
       {Object.entries(skills).map(([key, value]) => (
-        <div className={classes.skillGroup}>
+        <div key={key} className={classes.skillGroup}>
           <h4 className={classes.header}>{key}</h4>
           <ul>
             {value.map((skill, index) => (
